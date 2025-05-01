@@ -1,0 +1,67 @@
+
+* {
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color:lightcyan;
+}
+
+.container {
+    text-align: center;
+   
+}
+
+.container-images img {
+    width: 350px;
+    height: 350px;
+}
+
+.container-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    height: 100vh;
+}
+
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.popup {
+    position: relative;
+}
+
+
+.img-1, .img-2, .img-3 {
+    width: 350px;
+    height: 250px;
+    border: solid white 2px;
+    display: none;
+    z-index: 1000;
+}
+
+
+.btn {
+    position: absolute;
+    top: -2px;
+    right: -20px;
+    left: 500px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
